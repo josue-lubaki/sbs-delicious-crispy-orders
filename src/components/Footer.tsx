@@ -1,4 +1,4 @@
-import { Instagram } from "lucide-react";
+import { SiInstagram } from "react-icons/si";
 
 const Footer = () => {
   return (
@@ -22,7 +22,7 @@ const Footer = () => {
               className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground transition-all"
               aria-label="Instagram"
             >
-              <Instagram className="w-5 h-5" />
+              <SiInstagram className="w-5 h-5" />
             </a>
           </div>
         </div>
