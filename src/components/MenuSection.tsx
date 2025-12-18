@@ -28,7 +28,7 @@ const MenuSection = () => {
     <section id="menu" className="py-24 bg-card">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in-delay-1">
           <span className="text-primary font-semibold tracking-widest uppercase text-sm">
             Nos Spécialités
           </span>
@@ -44,7 +44,7 @@ const MenuSection = () => {
           {menuItems.map((item, index) => (
             <div 
               key={item.name}
-              className="group relative bg-gradient-card rounded-2xl overflow-hidden shadow-card hover:shadow-hover transition-all duration-500 hover:-translate-y-2"
+              className="group relative bg-gradient-card rounded-2xl overflow-hidden shadow-card hover:shadow-hover transition-all duration-500 hover:-translate-y-2 animate-fade-in-delay-2"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               {/* Highlight Badge */}

@@ -2,7 +2,7 @@ import { Phone, MessageCircle, Clock, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const ContactCTA = () => {
-  const phoneNumber = "+33 6 00 00 00 00"; // À remplacer par le vrai numéro
+  const phoneNumber = "+1 (819) 979-4539"; // À remplacer par le vrai numéro
   
   return (
     <section className="py-24 relative overflow-hidden">
@@ -13,7 +13,7 @@ const ContactCTA = () => {
       </div>
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto text-center animate-fade-in-delay-2">
           {/* Header */}
           <span className="text-primary font-semibold tracking-widest uppercase text-sm">
             Envie de Craquer ?
@@ -28,7 +28,7 @@ const ContactCTA = () => {
           </p>
           
           {/* Phone CTA */}
-          <div className="bg-gradient-card rounded-3xl p-8 md:p-12 shadow-card mb-12">
+          <div className="bg-gradient-card rounded-3xl p-8 md:p-12 shadow-card mb-12 animate-fade-in-delay-3">
             <div className="flex items-center justify-center gap-4 mb-6">
               <div className="w-16 h-16 rounded-full bg-gradient-gold flex items-center justify-center animate-pulse-gold">
                 <Phone className="w-8 h-8 text-primary-foreground" />

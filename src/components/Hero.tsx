@@ -20,7 +20,7 @@ const Hero = () => {
         </span>
         
         <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animate-fade-in-delay-1">
-          <span className="text-foreground">Sbs</span>{" "}
+          <span className="text-foreground">SBS</span>{" "}
           <span className="text-gradient-gold italic">Delicious</span>
           <br />
           <span className="text-foreground">Crispy</span>
@@ -33,7 +33,7 @@ const Hero = () => {
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-delay-3">
           <Button variant="cta" size="xl" asChild>
-            <a href="tel:+33600000000" className="flex items-center gap-3">
+            <a href="tel:+18199794539" className="flex items-center gap-3">
               <Phone className="w-6 h-6" />
               Commander Maintenant
             </a>
@@ -45,7 +45,7 @@ const Hero = () => {
         </div>
         
         {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-muted-foreground">
+        <div className="mt-10 flex flex-col items-center gap-2 text-muted-foreground pointer-events-none animate-bounce-soft">
           <span className="text-sm tracking-widest uppercase">Découvrir</span>
           <div className="w-px h-12 bg-gradient-to-b from-primary to-transparent" />
         </div>
