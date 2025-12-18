@@ -1,4 +1,4 @@
-import { Phone, MessageCircle, Clock, MapPin } from "lucide-react";
+import { Phone, Clock, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const ContactCTA = () => {
@@ -49,18 +49,6 @@ const ContactCTA = () => {
                 <a href={`tel:${phoneNumber.replace(/\s/g, '')}`} className="flex items-center gap-3">
                   <Phone className="w-6 h-6" />
                   Appeler Maintenant
-                </a>
-              </Button>
-              
-              <Button variant="goldOutline" size="lg" asChild>
-                <a 
-                  href={`https://wa.me/${phoneNumber.replace(/\s/g, '').replace('+', '')}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2"
-                >
-                  <MessageCircle className="w-5 h-5" />
-                  WhatsApp
                 </a>
               </Button>
             </div>
