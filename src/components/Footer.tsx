@@ -1,4 +1,4 @@
-import { Phone, Instagram } from "lucide-react";
+import { Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -13,17 +13,6 @@ const Footer = () => {
             <p className="text-muted-foreground text-sm mt-2">
               Street Food Premium
             </p>
-          </div>
-          
-          {/* Contact */}
-          <div className="flex items-center gap-6">
-            <a 
-              href="tel:+18199794539" 
-              className="flex items-center gap-2 text-foreground hover:text-primary transition-colors"
-            >
-              <Phone className="w-5 h-5" />
-              <span>+1 (819) 979-4539</span>
-            </a>
           </div>
           
           {/* Social */}
