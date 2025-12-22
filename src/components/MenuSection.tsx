@@ -1,5 +1,6 @@
 import samousaImg from "@/assets/samousa.png";
 import beignetsImg from "@/assets/beignets.png";
+import springRollsImg from "@/assets/spring-rolls.png";
 
 interface MenuItem {
   name: string;
@@ -21,6 +22,12 @@ const menuItems: MenuItem[] = [
     image: beignetsImg,
     highlight: "Signature",
   },
+  {
+    name: "Spring Rolls",
+    description: "Spring rolls dorés et croustillants, garnis de poulet tendre et de vermicelles fondants, pour une bouchée savoureuse et réconfortante.",
+    image: springRollsImg,
+    highlight: "Signature",
+  },
 ];
 
 const MenuSection = () => {
@@ -40,7 +47,7 @@ const MenuSection = () => {
         </div>
         
         {/* Menu Grid */}
-        <div className="grid md:grid-cols-2 gap-8 lg:gap-12 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 lg:gap-12 max-w-5xl mx-auto">
           {menuItems.map((item, index) => (
             <div 
               key={item.name}

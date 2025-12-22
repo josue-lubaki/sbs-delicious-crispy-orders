@@ -1,8 +1,10 @@
-import { Phone } from "lucide-react";
+import { Phone, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
+  const phoneNumber = "+18199794539";
+  const whatsappUrl = `https://wa.me/${phoneNumber.replace('+', '')}`;
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -33,14 +35,17 @@ const Hero = () => {
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-delay-3">
           <Button variant="cta" size="xl" asChild>
-            <a href="tel:+18199794539" className="flex items-center gap-3">
+            <a href={`tel:${phoneNumber}`} className="flex items-center gap-3">
               <Phone className="w-6 h-6" />
               Commander Maintenant
             </a>
           </Button>
           
-          <Button variant="goldOutline" size="lg" asChild>
-            <a href="#menu">Voir le Menu</a>
+          <Button variant="goldOutline" size="xl" asChild>
+            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3">
+              <MessageCircle className="w-6 h-6" />
+              Envoyer un Message
+            </a>
           </Button>
         </div>
         

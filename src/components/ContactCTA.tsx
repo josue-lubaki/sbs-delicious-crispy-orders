@@ -1,8 +1,10 @@
-import { Phone, Clock, MapPin } from "lucide-react";
+import { Phone, Clock, MapPin, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const ContactCTA = () => {
   const phoneNumber = "+1 (819) 979-4539"; // À remplacer par le vrai numéro
+  const phoneNumberClean = phoneNumber.replace(/\s/g, '').replace(/[()]/g, ''); // Format: +18199794539
+  const whatsappUrl = `https://wa.me/${phoneNumberClean.replace(/\+/g, '')}`; // Format: https://wa.me/18199794539
   
   return (
     <section className="py-24 relative overflow-hidden">
@@ -38,7 +40,7 @@ const ContactCTA = () => {
             <p className="text-muted-foreground mb-4">Appelez-nous au</p>
             
             <a 
-              href={`tel:${phoneNumber.replace(/\s/g, '')}`}
+              href={`tel:${phoneNumberClean}`}
               className="font-display text-3xl md:text-5xl font-bold text-gradient-gold hover:opacity-80 transition-opacity"
             >
               {phoneNumber}
@@ -46,9 +48,16 @@ const ContactCTA = () => {
             
             <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button variant="cta" size="xl" asChild>
-                <a href={`tel:${phoneNumber.replace(/\s/g, '')}`} className="flex items-center gap-3">
+                <a href={`tel:${phoneNumberClean}`} className="flex items-center gap-3">
                   <Phone className="w-6 h-6" />
                   Appeler Maintenant
+                </a>
+              </Button>
+              
+              <Button variant="goldOutline" size="xl" asChild>
+                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3">
+                  <MessageCircle className="w-6 h-6" />
+                  Envoyer un Message
                 </a>
               </Button>
             </div>
